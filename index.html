@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Teton Valley Happenings</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Teko:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="banner">
+      <h1>Teton Valley Happenings</h1>
+    </div>
+    <div class="main">
+      <div class="calendar-container">
+        <iframe
+          src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FBoise&showPrint=0&showTz=0&showDate=1&showTitle=0&src=YjdqdDdyb280czJsdDYxdTNiaTYwaHQyb3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23616161"
+          style="border: solid 1px #777"
+          width="800"
+          height="600"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </div>
+      <div class="form-container">
+        <h2>Submit Event</h2>
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label>Event Name: <input type="text" name="event-name" /></label>
+          </p>
+          <p>
+            <label>Event Website: <input type="text" name="event-website" /></label>
+          </p>
+          <p>
+            <label>Your Email: <input type="email" name="email" /></label>
+          </p>
+          <p>
+            <label for="event-description">Event Description: </label>
+          </p>
+          <textarea name="event-description" cols="30" rows="10"></textarea>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

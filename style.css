@@ -1,0 +1,29 @@
+.banner { 
+  height: 300px;
+  padding-top: .67em;
+  background: url(assets/banner.jpeg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h1 {
+  display: inline-block;
+  width: 400px;
+  padding: .3em;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  font-family: 'Teko', sans-serif;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.calendar-container {
+  margin: 1.2em;
+  flex-basis: 800px;
+  flex-shrink: 0;
+}
+.form-container {
+  font-family: 'Libre Baskerville', serif;
+  margin: 1.2em;
+}
