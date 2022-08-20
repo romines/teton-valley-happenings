@@ -9,7 +9,16 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Teko:wght@500&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Teko:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
     <div class="banner">
@@ -28,12 +37,18 @@
       </div>
       <div class="form-container">
         <h2>Submit Event</h2>
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="event-submission" method="POST" data-netlify="true">
           <p>
             <label>Event Name: <input type="text" name="event-name" /></label>
           </p>
           <p>
-            <label>Event Website: <input type="text" name="event-website" /></label>
+            <label>Event Date: <input type="date" name="event-date" /></label>
+            <label>Time: <input type="time" name="event-time" /></label>
+          </p>
+          <p>
+            <label
+              >Event Website: <input type="text" name="event-website"
+            /></label>
           </p>
           <p>
             <label>Your Email: <input type="email" name="email" /></label>
@@ -42,6 +57,10 @@
             <label for="event-description">Event Description: </label>
           </p>
           <textarea name="event-description" cols="30" rows="10"></textarea>
+          <p>
+            <label for="additional-info">Additional Info: </label>
+          </p>
+          <textarea name="additional-info" cols="30" rows="10" placeholder="Eg. 'Repeats first Thursday of every month . . . '"></textarea>
           <p>
             <button type="submit">Send</button>
           </p>
